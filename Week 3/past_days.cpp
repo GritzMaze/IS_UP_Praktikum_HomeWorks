@@ -6,26 +6,6 @@ cout << "Past days" << endl;
 int days = 0, month = 0, year = 0;
 int sum = 0;
 cin >> days >> month >> year;
-/* sum = ((month - 1) * 31) - ;
-if(month == 1) {
-  sum = days;
-  cout << sum;
-} else {
-  if(month % 2 != 0) {
-        if (month > 2) {
-          if (year % 4 == 0)
-          {
-            if (year % 100 == 0)
-              {
-                if (year % 400 == 0) sum = sum + 1;
-              } else sum = sum + 1;
-            }
-          }
-        }
-        sum = sum + days;
-        cout << sum;
-      }
-*/
 switch(month) {
   case 1:
     sum = days;
