@@ -12,8 +12,8 @@ int main() {
                         hour++;
                         diff = ((minutes + 30) - 60);
                         minutes = 0 + diff;
-                        cout << hour <<":" << minutes==0? cout << "00" : cout << minutes;
-                } else cout << hour << ":" <<cout << minutes + 30;
+                        cout << hour << ":" << minutes? cout << minutes : cout << "00";
+                } else  cout << hour << ":" << minutes + 30;
         } else cout << "Invalid input";
 
         return 0;
