@@ -10,7 +10,7 @@ int main() {
                         sum *= n % 10;
                         n = n / 10;
                 }
-                if((sum >= 100 && sum <= 999) || (sum >= -999 && sum <= -100)) {
+                if((sum >= 100) || (sum <= -100)) {
                         std::cout << "YES";
                 } else std::cout << "No";
         } else std::cout << "Not a three digit number or NaN";
