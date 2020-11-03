@@ -18,7 +18,6 @@ int main() {
                 if(i % 2 == 0) sum += 2.99;
                 else if(isPrime(i)) sum += 2.00;
                 else sum += 3.00;
-                std::cout << sum << std::endl;
         }
         double answer = sum /days;
         answer = answer * 100;
