@@ -1,8 +1,9 @@
 #include <iostream>
 #include <cmath>
 
-bool isLeap(int year);
-bool isPrime(int num);
+bool    isLeap(int year);
+bool    isPrime(int num);
+double  roundToSecondDigit(double d);
 
 int main() {
         std::cout << "One month session \n";
@@ -20,7 +21,8 @@ int main() {
                 std::cout << sum << std::endl;
         }
         double answer = sum /days;
-        std::cout << std::round(answer * 100.0) / 100.0;
+        answer = answer * 100;
+        std::cout << roundToSecondDigit(answer) / 100.0;
 
 
         return 0;
@@ -45,4 +47,9 @@ bool isPrime(int num) {
                 if(num % i == 0) return false;
         }
         return true;
+}
+
+double roundToSecondDigit(double d)
+{
+  return floor(d + 0.5);
 }
