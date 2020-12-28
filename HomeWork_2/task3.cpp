@@ -34,7 +34,7 @@ void takeString(char * main, char * sec) {
      * 
      * Boring way and long way ( ͡ʘ ͜ʖ ͡ʘ)
      * 
-     * /
+     **/
 
     // for(int i = 0; i < length; i++) {
     //     for(int j = 0; j < length2; j++)
