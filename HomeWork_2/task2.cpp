@@ -7,17 +7,19 @@ void turnClockwise(int arr[N][N], int times) {
         int temp = 0, counter = 0, temp2 = 0;
         while(counter < times)
         {
-                temp = arr[0][N];
-                arr[0][N] = arr[0][0];
-                temp2 = arr[N][N];
-                arr[N][N] = temp;
-                temp = arr[N][0];
-                arr[N][0] = temp2;
-                arr[0][0] = temp;
+                temp = arr[0][0];
+                arr[0][0] = arr[N-1][0];
+                arr[N-1][0] = arr[N-1][N-1];
+                arr[N-1][N-1] = arr[0][N-1];
+                arr[0][N-1] = temp;
+                temp = arr[1][1];
+                arr[1][1] = arr[1][N-2];
+                arr[1][N-2] = arr[N-2][N-2];
+                arr[N-2][N-2] = arr[N-2][1];
+                arr[N-2][1] = temp;
                 counter++;
         }
 
-        std::cout << temp << " "<< temp2;
 
         for(int i = 0; i < N; i++) {
                 for(int j = 0; j < N; j++)

@@ -5,13 +5,11 @@ void shift(int rows) {
                 for (int k = i; k <= 9; k++)
                         std::cout << k << " ";
 
-                for (int j = 1; j <= i; j++)
+                for (int j = 1; j < i; j++)
                         std::cout << j << " ";
 
                 std::cout << "\n";
         }
-
-
 }
 
 int main() {
